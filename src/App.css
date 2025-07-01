@@ -7927,10 +7927,6 @@ width: 40%;
   display: flex;
   flex-direction: column;
   margin: 3% 30%;
- 
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* justify-content: flex-start; */
 }
 .EventSelectOptions{
   padding:  2% 5%;
@@ -7998,9 +7994,6 @@ font-weight: 400;
 }
 
 /* ===================================================== */
-/* .background {
-  background: linear-gradient(to bottom, #f0f9ff 0%, #ffffff 30%);
-} */
 
 .CollegeSocialMedia img {
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -8013,13 +8006,6 @@ font-weight: 400;
 
 
 
-
-/* .background {
-  background-color: #000000;
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
-} */
 
 
 
