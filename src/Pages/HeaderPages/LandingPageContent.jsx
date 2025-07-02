@@ -7,7 +7,7 @@ export default function LandingPageContent() {
                 <div className="background">
                     
                     <main className="landingpagecontent">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbAPHpwLFD56TrBCH6RJSRgwXDRK7sVjPgte2qMxEn7uTXx9cQYyTYaY5Xu9q_OqHhSZU&usqp=CAU" width="40%" height="500px" className="landingPageImage"></img>
+                        <img src="https://miracle.edu.in/wp-content/uploads/2015/09/about-us.png" width="40%" height="500px" className="landingPageImage"></img>
                         <div className="FestTheme">
                             <h1 className="ThemeHeader">Theme</h1>
                             <h2 className="ThemeSubHeader">Main Theme Header</h2>
