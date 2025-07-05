@@ -7,9 +7,13 @@ export function MainHeader() {
 
         case "/Register":
             return (
-                <header className="RegisterMainHeader">
-                    <h1 className='RegisterHeader'>MIRACLE</h1>
-                </header>
+                <div className='header-outer-div'>
+                    <div className="mrcl-code">
+               
+                    <h1 className='main-header'>MIRACLE</h1>
+               
+                </div>
+                </div>
             )
             break;
 
@@ -25,24 +29,37 @@ export function MainHeader() {
 
         case "/TermsAndConditions":
             return (
-                <header className="TermsAndConditionsMainHeader">
-                    <h1 className='TermsAndConditionsHeader'>MIRACLE</h1>
-                </header>
+                <div className='header-outer-div'>
+                    <div className="mrcl-code">
+               
+                    <h1 className='main-header'>MIRACLE</h1>
+               
+                </div>
+                </div>
+                
             )
             break;
         case "/PrivacyPolicy":
             return (
-                <header className="MainPrivacyHeader">
-                    <h1 className='PrivacyHeader'>MIRACLE</h1>
-                </header>
+                <div className='header-outer-div'>
+                    <div className="mrcl-code">
+               
+                    <h1 className='main-header'>MIRACLE</h1>
+               
+                </div>
+                </div>
             )
             break;
 
         case "/SignIn":
             return (
-                <header className="LoginMainHeader">
-                    <h1 className='LoginHeader'>MIRACLE</h1>
-                </header>
+                <div className='header-outer-div'>
+                    <div className="mrcl-code">
+               
+                    <h1 className='main-header'>MIRACLE</h1>
+               
+                </div>
+                </div>
             )
             break;
         case "/":

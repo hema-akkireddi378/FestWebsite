@@ -5,13 +5,13 @@ export default function Register() {
             <div className="registe">
                 {/* <p className='register'>Register</p> */}
                 <div className="register-elements">
-                    <input type="text" placeholder="UserName" name="username" id="username" className="register-details">
+                    <input type="text" placeholder="UserName" name="username" id="username" className="login-details">
                     </input>
-                    <input type="password" placeholder="Password" name="password" id="password" className="register-details">
+                    <input type="password" placeholder="Password" name="password" id="password" className="login-details">
                     </input>
-                    <input type="password" placeholder="Confirm password" name="confirm password" id="confirm password" className="register-details">
+                    <input type="password" placeholder="Confirm password" name="confirm password" id="confirm password" className="login-details">
                     </input>
-                    <input type="email" placeholder="E-mail address" name="email" id="email" className="register-details">
+                    <input type="email" placeholder="E-mail address" name="email" id="email" className="login-details">
                     </input>
                     <div className="register-details-verify">
                         <input type="checkbox" ></input>

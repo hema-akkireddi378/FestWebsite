@@ -2248,7 +2248,9 @@
 
   .main-SignIn {
     background-color: #3a8abf;
+    padding-bottom: 8%;
   }
+
 
   /* Landing Page */
   /* ==================================================== */
@@ -2460,16 +2462,21 @@
   .register-elements {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
+    padding: 5% 0% 2% 0%;
+    justify-content: center;
+   
   }
 
   .register-details {
-    padding: 5% 0% 5% 15%;
-    border: 3px solid black;
-    border-radius: 10px;
     background-color: #3a8abf;
+   margin: 0% 40% 0% 40%;
+    padding: 0.5% 0% 0.5% 2% ;
+    border: none;
+    border-radius: 5px;
     font-size: medium;
     font-weight: 400;
+    box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.5);
   }
 
   input::placeholder {
@@ -2479,7 +2486,7 @@
   }
 
   .register-details-verify {
-    padding: 5% 0% 5% 15%;
+    padding: 5% 0% 5% 5%;
     border: 3px solid black;
     border-radius: 10px;
     background-color: #3a8abf;
@@ -2488,6 +2495,7 @@
     font-size: large;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
+  
   }
 
   .register-details-verify span {
@@ -2497,13 +2505,122 @@
   }
 
   .login-details {
-    padding: 5% 0% 5% 15%;
+    padding: 4% 5%;
     border: 3px solid black;
     border-radius: 10px;
     background-color: #3a8abf;
     font-size: medium;
     font-weight: 400;
   }
+
+  .login-link {
+    padding: 2% 10%;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+
+    background-color: green;
+  }
+.login-button {
+    font-size: large;
+    font-weight: 400;
+    border: none;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .login-button span {
+
+    text-wrap: nowrap;
+  }
+  /* forgot Class */
+  /* ================================================== */
+  .forgot-link {
+    text-decoration: none;
+    color: #000;
+    text-align: end;
+  }
+   .register-elements {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 40% 0% 40%;
+  }
+.sign-up {
+    padding: 5% 10% 5% 10%;
+    background-color: #3a8abf;
+    color: black;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    border: 3px solid black;
+  }
+
+
+
+  /* sign-in-link Class */
+  /* ================================================== */
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 3%;
+  }
+
+  .sign-in-link {
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+     font-size: large;
+  }
+
+  .sign-in {
+    color: black;
+    text-align: center;
+     font-size: large;
+  }
+
+  .other {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+  }
+
+  .my-facebook-link {
+    height: 20px;
+    width: 4%;
+    border-radius: 20px;
+  }
+
+  .my-google-link {
+    height: 20px;
+    width: 4%;
+    border-radius: 20px;
+  }
+
+  .facebook-link {
+    height: 30px;
+    width: 2%;
+  }
+
+  .google-link {
+    height: 30px;
+    width: 2%;
+  }
+
+
+
+ 
+
+
+  
 
   /* Home Page */
   /* =========================================================================== */
@@ -2784,6 +2901,393 @@
   }
 
 
+/* ============================================ */
+  /* Faculty Dashboard */
+  .facultyDashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .departmentSelection {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    margin: 5% 2% 3% 0%;
+    
+
+  }
+
+  .departmentSelectionCon {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 1%;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .facultyProfile {
+    height: 100%;
+    width: 80%;
+    padding: 30%;
+    margin: 10%;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+
+
+  .facultyCardOuterDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5% 10%;
+    place-items: space-between;
+    grid-column-gap: 5%;
+    grid-row-gap: 50px;
+    height: 50%;
+    width: 80%;
+    
+  }
+
+  .facultyCardContent {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 10%;
+  }
+
+  .facultyCard {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 5% 0%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 20px;
+  }
+
+  .facultyDetailsCon {
+    display: flex;
+    flex-direction: row; 
+    margin: 5% 10%;
+    font-size: medium;
+    font-weight: 700;
+    
+  }
+  .facultyProfileCon{
+    text-align: center;
+  }
+  .facultyProfileCon span{
+    text-wrap: nowrap;
+  }
+  .facultyDetailsKey{
+font-family: 'Times New Roman', Times, serif;
+width: 40%;
+  }
+  .facultyDetailsValue{
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    padding-left:2% ;
+  }
+  .facultyDetailsValue span{
+    text-wrap: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+  }
+.facultyProfileCon span{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Event Coordinator Dashboard */
+/* ============================================================= */
+.eventcoordinatorDashBoard{
+  display: flex;
+    flex-direction: column;
+}
+.eventSelection{
+  display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    margin: 5% 2% 1% 0%;
+}
+.eventSelectionCon{
+  display: flex;
+    flex-direction: column;
+    padding: 1% 1%;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+.EventCoordinatorOuterDiv{
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5% 10%;
+    place-items: space-between;
+    grid-column-gap: 5%;
+    grid-row-gap: 50px;
+    height: 50%;
+    width: 80%;
+}
+.EventCoordinatorCard{
+  display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 5% 0%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 20px;
+}
+.EventCoordinatorCon{
+   display: flex;
+    flex-direction: column;
+    padding: 3% 10%;
+}
+.EventCoordinatorProfile{
+   height: 100%;
+    width: 80%;
+    padding: 30%;
+    margin: 10%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.EventCoordinatorProfileCon span{
+display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-wrap: nowrap;
+}
+.EventCoordinatorDetailsCon{
+   display: flex;
+    flex-direction: row; 
+    margin: 5% 10%;
+    font-size: medium;
+    font-weight: 700;
+}
+.EventCoordinatorDetailsKey{
+  font-family: 'Times New Roman', Times, serif;
+width: 40%;
+}
+.DetailsEventCoordinatorValue{
+   font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    padding-left:2% ;
+}
+.EventCoordinatorDetailsValue{
+  padding-left: 2%;
+}
+.EventCoordinatorDetailsValue span{
+   text-wrap: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+.ProfileEdition{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-right:8% ;
+  margin-top: 2%;
+}
+.ProfileSaving{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-right:8% ;
+  margin-top: 2%;
+}
+.EditMyProfile{
+  padding: 3% 20%; 
+  background-color: green;
+  color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: large;
+  font-weight: 400;
+}
+.EditMyProfile span{
+  text-wrap: nowrap;
+  font-family: 'Times New Roman', Times, serif;
+}
+.my-profile-content .updatedmyprofileuserdata{
+    border: none;
+    padding: 0% 0%;
+    padding: 2%;
+    
+    background-color: whitesmoke;
+    width: 60%;
+    border-radius: 10px;
+  }
+  .savingUserDetails{
+   padding: 5% 40%; 
+  background-color: green;
+  color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: large;
+  font-weight: 400;
+
+  }
+/* =========================================================================================== */
+  /* Assignment Section */
+  .assignment {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 5%;
+  }
+
+  .assignment-header {
+    margin: 3% 0%;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .assignment-outer-div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+  }
+
+  .assignment-inner-div {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .event-assignment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .event-assignment-header {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    justify-content: space-between;
+    margin: 3%;
+    font-size: x-large;
+    font-weight: 700;
+    border-radius: 20px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+
+
+  }
+
+  .event-assignment-info  {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2%;
+    /* width: 75%; */
+    /* justify-content: space-betweens; */
+  }
+  .event-assignment-info .event-assignment-info-key{
+    text-wrap: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+    width: 30%;
+  }
+
+  .event-details {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    justify-content: space-between;
+    margin: 1% 3%;
+    font-size: xx-large;
+    font-weight: 400;
+    border-radius: 10px;
+
+
+  }
+
+  .event-details:hover {
+    background-color: #3a8abf;
+  }
+
+  .event-info {
+    padding: 1% 3%;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: x-large;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .event-info .event-info-key{
+     text-wrap: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+  }
+/* ============================================================ */
+  /* Certificate Download */
+  .certificatedownload {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 8%;
+
+  }
+
+  .certificate-header {
+    font-size: xx-large;
+    font-weight: 400;
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0% 0% 5% 0%;
+  }
+
+  .outer-certificate-download {
+    height: 70vh;
+   border-radius: 10px;
+    margin: 0% 15%;
+    box-shadow: 0 0 3px 3px #000;
+  }
+
+  .inner-certificate-download {
+    height: 50vh;
+    box-shadow: 0 0 2px 2px #000;
+    border-radius: 10px;
+    margin: 6% 15% 3% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .certificate-download {
+    display: flex;
+
+    justify-content: end;
+    margin-right: 10%;
+  }
+
+  .submit {
+    padding: 2% 5%;
+    background-color: green;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
 
   /* Sports Page */
 /* ======================================================================================== */
@@ -2850,9 +3354,14 @@
   .footer-event-coordinator-details {
     padding: 1% 0px 0% 13%;
     font-size: large;
+    width: 100%;
     font-weight: 300;
+    display: flex;
+    flex-direction: row;
   }
-
+  .footer-event-coordinator-details .footerEventCoordinatorDetailsKey{
+    width: 15%;
+  }
 
   .footer-button-link {
     padding: 1% 6%;
@@ -3757,7 +4266,7 @@ font-weight: 400;
   .bottomFooter {
     display: flex;
     flex-direction: row;
-    gap: 0px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     padding: 0.5%;
@@ -3767,7 +4276,7 @@ font-weight: 400;
     text-decoration: none;
     list-style: none;
     margin: 20px 0px;
-    font-size: small;
+    font-size: medium;
     font-weight: 500;
     color: black;
   }
