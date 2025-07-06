@@ -22,11 +22,12 @@ export default function Register() {
 
     const handleSubmit = e => {
         e.preventDefault();
-        fetch('http://localhost:8081/api/register', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+        fetch("https://festwebsitebackend.onrender.com/api/register", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
         })
+
             .then(res => {
                 if (res.ok) {
                     setFormData({ username: '', email: '', password: '', confirmpassword: '' });
