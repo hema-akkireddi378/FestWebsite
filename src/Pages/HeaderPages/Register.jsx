@@ -19,6 +19,7 @@ export default function Register() {
             [e.target.name]: e.target.value
         }));
     };
+
     const handleSubmit = e => {
         e.preventDefault();
         fetch('http://localhost:8081/api/register', {
@@ -26,13 +27,18 @@ export default function Register() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
         })
-            .then(res => res.json())
-            .then(data => {
-                setFormData({ username: '', email: '', password: '', confirmpassword: '' });
+            .then(res => {
+                if (res.ok) {
+                    setFormData({ username: '', email: '', password: '', confirmpassword: '' });
+                    navigate("/Home");
+                } else {
+                    console.error("Registration failed with status:", res.status);
+                }
             })
-            .then(data => {
-                navigate("/Home");
+            .catch(err => {
+                console.error("Registration error:", err);
             });
+
 
     };
     return (
@@ -49,18 +55,13 @@ export default function Register() {
                             onChange={handleChange}></input>
                         <input type="password" placeholder="confirm password" name="confirmpassword" id="confirmpassword" className="login-details" value={formData.confirmpassword}
                             onChange={handleChange}></input>
-                        
-<div className="register-details-verify">
-    <input type="checkbox" required />
-    <label htmlFor="verify"><span>Verify you are human</span></label>
-</div>
+
+                        {/* <div className="register-details-verify"> */}
+                        <input type="checkbox" id="verifyHuman" required />
+                        <label htmlFor="verifyHuman"><span>Verify you are human</span></label>
+                        {/* </div> */}
 
 
-
-                        {/* <div className="register-details-verify">
-                            <input type="checkbox" ></input>
-                            <label><span>Verify you are human</span></label>
-                        </div> */}
                         <div className="login-link">
                             <button type="submit" className="login-button"><span>Sign Up</span></button>
                         </div>
