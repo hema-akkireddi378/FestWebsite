@@ -10,7 +10,7 @@ export function MainHeader() {
                 <div className='header-outer-div'>
                     <div className="mrcl-code">
                
-                    <h1 className='main-header'>MIRACLE</h1>
+                    <h1 className='register-header'>MIRACLE</h1>
                
                 </div>
                 </div>
@@ -56,7 +56,7 @@ export function MainHeader() {
                 <div className='header-outer-div'>
                     <div className="mrcl-code">
                
-                    <h1 className='main-header'>MIRACLE</h1>
+                    <h1 className='signin-header'>MIRACLE</h1>
                
                 </div>
                 </div>

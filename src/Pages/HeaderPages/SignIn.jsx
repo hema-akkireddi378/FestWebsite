@@ -2,15 +2,16 @@ import { Link } from "react-router-dom"
 export default function SignIn() {
     return (
         <div className="main-SignIn">
-            <div className="registe">
-                {/* <p className='sign'>Sign In</p> */}
+            <div className="register">
                 <div className="register-elements">
                     <input type="text" placeholder="UserName" name="username" id="username" className="login-details">
                     </input>
                     <input type="password" placeholder="Password" name="password" id="password" className="login-details">
                     </input>
+                    <div className="forget-div">
                     <Link to="/ForgotPassword" className="forgot-link">Forgot Password?</Link>
-                    <button type="submit" className="sign-up"><span>Sign In</span></button>
+                    </div>
+                    <button type="submit" className="sign-in-con"><span>Sign In</span></button>
                 </div>
                 <div className="signin">
                     <p className="signup">

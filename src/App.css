@@ -75,7 +75,6 @@
     display: flex;
     flex-direction: row;
     background-color: #000;
-
     justify-content: space-between;
   }
 
@@ -98,11 +97,30 @@
 
   .main-header {
     color: white;
-    padding: 10% 0px 0px 20%;
+    padding: 30% 0px 0px 20%;
     font-size: x-large;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
-    /* font-size: 3rem; */
+    transition: transform 1s, color 1s;
+    cursor: pointer;
+  }
+
+  .register-header {
+    color: white;
+    padding: 30% 0px 10% 20%;
+    font-size: x-large;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 1s, color 1s;
+    cursor: pointer;
+  }
+
+  .signin-header {
+    color: white;
+    padding: 30% 0px 10% 20%;
+    font-size: x-large;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
     transition: transform 1s, color 1s;
     cursor: pointer;
   }
@@ -410,174 +428,184 @@
     padding: 5% 5%;
   }
 
-  /* Register File */
-  /* ================================================== */
+
+  /* Register  Page */
+  /* ===================================================== */
   .main-register {
-    background-color: rgb(254, 254, 254);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 20% 20%;
+    background-color: rgb(227, 227, 239);
+
   }
 
   .register-elements {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin: 10% 20% 0% 20%;
-  }
+    gap: 20px;
 
-  .register-details {
-    padding: 3% 5% 3% 5%;
-    border: none;
-    border-radius: 5px;
-    font-size: medium;
-    font-weight: 400;
-    box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.5);
-  }
-
-  input::placeholder {
-    color: black;
-
-  }
-
-  .register-details-verify {
-    padding: 3% 15% 3% 15%;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: white;
-    font-size: medium;
-    font-weight: 400;
-    display: flex;
-    gap: 10%;
-
-  }
-
-  label span {
-    display: block;
-    text-wrap: nowrap;
-    font-family: 'Times New Roman', Times, serif;
-
-  }
-
-  .sign-up {
-    padding: 3% 40%;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-wrap: nowrap;
-    font-size: medium;
-    font-weight: 400;
-    background-color: transparent;
-    background-color: green;
-  }
-
-  .main-SignIn {
-    background-color: whitesmoke;
   }
 
   .login-details {
-    padding: 3% 5% 3% 5%;
-    border: none;
-    border-radius: 5px;
-    font-size: medium;
-    font-weight: 400;
-    box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.5);
-  }
-
-  .login-link {
-    padding: 3% 35%;
+    padding: 4% 10%;
     border: 2px solid black;
     border-radius: 10px;
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    background-color: transparent;
-    margin: 0% 50%;
-    background-color: green;
+    font-size: medium;
+    font-weight: 2rem;
   }
 
+  .verify-div {
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 4% 10%;
+    margin: 10% 0%;
+    display: flex;
+    gap: 5px;
+  }
 
+  .verify-content span {
+    font-size: medium;
+    font-weight: 400;
+    text-wrap: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+  }
 
   .login-button {
-    font-size: large;
     font-weight: 400;
-    border: none;
-    color: #000;
-    background-color: transparent;
+    color: #fff;
+  }
+
+  input::placeholder {
+    color: gray;
+    font-size: small;
+    font-weight: 100;
+
   }
 
   .login-button span {
-
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
     text-wrap: nowrap;
   }
 
-  /* sign-in Class */
-  /* ================================================== */
-  .main-SignIn {
-    padding: 40% 0px;
+  .sing-up {
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: green;
+    padding: 4% 0%;
+    margin: 10% 0%;
+    text-align: center;
   }
 
   .signin {
-    padding: 10px;
-  }
-
-  /* sign-in-link Class */
-  /* ================================================== */
-  .social-media {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 5% 0%;
+
+
+  }
+
+  .sign-up-con {
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-size: medium;
+    font-weight: 500;
+
+  }
+
+  .sign-up-con span {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .sign-in {
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .sign-in-link {
     text-decoration: none;
-    margin-left: 20px;
     color: black;
+    font-family: 'Times New Roman', Times, serif;
   }
-
-  .sign-in {
-    color: black;
-    text-align: center;
+  .sign-in-con{
+    padding: 5% 0%;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 500;
   }
-
+  .sign-in-con span{
+    font-family: 'Times New Roman', Times, serif;
+  }
   .other {
-    color: black;
     text-align: center;
-    padding: 20px;
+    padding: 5% 0%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
 
   .my-facebook-link {
-    height: 20px;
-    width: 4%;
     border-radius: 20px;
   }
 
   .my-google-link {
-    height: 20px;
-    width: 4%;
     border-radius: 20px;
   }
 
   .facebook-link {
-    height: 30px;
-    width: 8%;
+    height: 40px;
+    width: 14%;
   }
 
   .google-link {
-    height: 30px;
-    width: 8%;
+    height: 40px;
+    width: 14%;
   }
 
-  /* forgot Class */
-  /* ================================================== */
+  /*Login Page  */
+  /* ===================================================== */
+  .main-SignIn {
+    display: flex;
+    flex-direction: column;
+    padding: 50% 20%;
+    background-color: rgb(227, 227, 239);
+  }
+
   .forgot-link {
     text-decoration: none;
-    color: black;
-    margin-left: 30%;
-    padding: 0px 0px 5px 0px;
+    align-items: flex-end;
+    color: #000;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .sign-up {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4% 0%;
+    font-size: large;
+    font-weight: 600;
+
+  }
+
+  .sign-up span {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .forget-div {
+    display: flex;
+    justify-content: end;
   }
 
   /* Events */
@@ -2149,6 +2177,30 @@
     transform: rotate(360deg);
     color: red;
   }
+  .register-header{
+    padding: 30px 0px 30px 20px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    font-size: 2.5rem;
+    color: white;
+    transition: transform 0.5s, color 0.5s;
+    cursor: pointer;
+  }
+  .signin-header{
+    padding: 30px 0px 30px 20px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    font-size: 2.5rem;
+    color: white;
+    transition: transform 0.5s, color 0.5s;
+    cursor: pointer;
+  }
 
   /* ================================================== */
   .mainHeader-nav-elements {
@@ -2248,7 +2300,7 @@
 
   .main-SignIn {
     background-color: #3a8abf;
-    padding-bottom: 8%;
+    padding: 10%;
   }
 
 
@@ -2463,43 +2515,46 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 5% 0% 2% 0%;
+    padding: 0% 0% 2% 0%;
     justify-content: center;
-   
+
   }
 
   .register-details {
     background-color: #3a8abf;
-   margin: 0% 40% 0% 40%;
-    padding: 0.5% 0% 0.5% 2% ;
+    margin: 0% 40% 0% 40%;
+    padding: 0.5% 0% 0.5% 2%;
     border: none;
     border-radius: 5px;
     font-size: medium;
     font-weight: 400;
     box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.5);
   }
+  
+
 
   input::placeholder {
     color: black;
-    font-size: large;
-    font-weight: 500;
+    font-size: medium;
+    font-weight: 400;
   }
 
-  .register-details-verify {
-    padding: 5% 0% 5% 5%;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: #3a8abf;
+  .verify-div {
     display: flex;
-    gap: 5%;
+   flex-direction: row;
+   border: 3px solid black;
+   margin: 2% 40% 2% 40%;
+    padding: 1% 0% 1% 1%;
+    border-radius: 10px;
     font-size: large;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
-  
+    gap: 20px;
+    
   }
 
-  .register-details-verify span {
-    font-size: x-large;
+  .verify-div span {
+    font-size: large;
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
   }
@@ -2512,8 +2567,45 @@
     font-size: medium;
     font-weight: 400;
   }
+  .sing-up{
+     padding: 1% 0%;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 2% 40% 2% 40%;
+   background-color: green;
+   text-align: center;
+  }
+  .sign-up-con{
+    background: transparent;
+    border: none;
+   
+    color: #000;
+    font-size: large;
+    font-weight: 500;
+  }
+  .sign-up-con span{
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  .signin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .sign-in-con{
+    padding: 5% 0%;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 500;
+  }
+  .sign-in-con span{
+    font-family: 'Times New Roman', Times, serif;
+  }
 
-  .login-link {
+  /* .login-link {
     padding: 2% 10%;
     border: 2px solid black;
     border-radius: 10px;
@@ -2523,10 +2615,10 @@
     justify-content: center;
     text-decoration: none;
     background-color: transparent;
-
     background-color: green;
-  }
-.login-button {
+  } */
+
+  /* .login-button {
     font-size: large;
     font-weight: 400;
     border: none;
@@ -2537,7 +2629,8 @@
   .login-button span {
 
     text-wrap: nowrap;
-  }
+  } */
+
   /* forgot Class */
   /* ================================================== */
   .forgot-link {
@@ -2545,12 +2638,14 @@
     color: #000;
     text-align: end;
   }
-   .register-elements {
+
+  .register-elements {
     display: flex;
     flex-direction: column;
-    padding: 10% 40% 0% 40%;
+    padding: 5% 40% 0% 40%;
   }
-.sign-up {
+
+  .sign-up {
     padding: 5% 10% 5% 10%;
     background-color: #3a8abf;
     color: black;
@@ -2560,7 +2655,11 @@
     font-family: 'Times New Roman', Times, serif;
     border: 3px solid black;
   }
-
+  .forget-div{
+    display: flex;
+    align-items: end;
+    justify-content: e;
+  }
 
 
   /* sign-in-link Class */
@@ -2577,13 +2676,13 @@
     text-decoration: none;
     margin-left: 20px;
     color: black;
-     font-size: large;
+    font-size: large;
   }
 
   .sign-in {
     color: black;
     text-align: center;
-     font-size: large;
+    font-size: large;
   }
 
   .other {
@@ -2591,36 +2690,33 @@
     text-align: center;
     padding: 20px;
     font-size: large;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .my-facebook-link {
-    height: 20px;
-    width: 4%;
     border-radius: 20px;
   }
 
   .my-google-link {
-    height: 20px;
-    width: 4%;
     border-radius: 20px;
   }
 
   .facebook-link {
-    height: 30px;
-    width: 2%;
+    height: 40px;
+    width: 3%;
   }
 
   .google-link {
-    height: 30px;
-    width: 2%;
+    height: 40px;
+    width: 3%;
   }
 
 
 
- 
 
 
-  
+
+
 
   /* Home Page */
   /* =========================================================================== */
@@ -2641,12 +2737,13 @@
   }
 
 
-/* Events Page */
-/* ============================================================================= */
-.events-body {
+  /* Events Page */
+  /* ============================================================================= */
+  .events-body {
     background-color: whitesmoke;
     padding: 5%;
   }
+
   /* event-header class */
   .event-header {
     font-size: xx-large;
@@ -2656,6 +2753,7 @@
     padding-top: 20px;
     font-family: 'Times New Roman', Times, serif;
   }
+
   .main-events-header {
     color: #8a2be2;
     padding-top: 80px;
@@ -2664,7 +2762,8 @@
     font-weight: 500px;
     font-family: 'Times New Roman', Times, serif;
   }
-.event-content {
+
+  .event-content {
     padding: 8px 15px 8px 0px;
     font-size: large;
     font: weight 400;
@@ -2673,19 +2772,21 @@
     flex-direction: row;
   }
 
-   .event-content .eventContentKey{
+  .event-content .eventContentKey {
     font-family: 'Times New Roman', Times, serif;
     width: 40%;
   }
-/* cricket Class */
+
+  /* cricket Class */
   /* ================================================== */
-.events {
+  .events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     /* grid-template-rows: repeat(3,1fr); */
 
   }
+
   .cricket {
     background-color: #00ADB5;
     display: flex;
@@ -2696,7 +2797,7 @@
     transform: translateY(-20%);
     transform: translateY(+20%);
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 0 2px 2px #000 ;
+    box-shadow: 0 0 2px 2px #000;
   }
 
   .cricket:hover {
@@ -2706,7 +2807,7 @@
     animation-duration: 0.5s;
   }
 
-.sports-header {
+  .sports-header {
     padding: 10px 0px 10px 30px;
     font-size: x-large;
     font-weight: 400;
@@ -2715,7 +2816,8 @@
     font-family: 'Times New Roman', Times, serif;
 
   }
- .event-content {
+
+  .event-content {
     padding: 8px 15px 8px 0px;
     font-size: medium;
     font-weight: 400;
@@ -2724,13 +2826,13 @@
     display: flex;
     flex-direction: row;
   }
- 
-    .event-content .eventContentKey{
+
+  .event-content .eventContentKey {
     font-family: 'Times New Roman', Times, serif;
     width: 40%;
   }
-  
-.more {
+
+  .more {
     text-decoration: none;
     text-align: end;
     padding: 15px;
@@ -2740,7 +2842,8 @@
     font-family: 'Times New Roman', Times, serif;
     color: #000;
   }
-   .cricket1 {
+
+  .cricket1 {
     background-color: #F9F7F7;
     margin: 20px;
     padding: 20px;
@@ -2901,7 +3004,7 @@
   }
 
 
-/* ============================================ */
+  /* ============================================ */
   /* Faculty Dashboard */
   .facultyDashboard {
     display: flex;
@@ -2914,7 +3017,7 @@
     align-items: end;
     justify-content: end;
     margin: 5% 2% 3% 0%;
-    
+
 
   }
 
@@ -2947,7 +3050,7 @@
     grid-row-gap: 50px;
     height: 50%;
     width: 80%;
-    
+
   }
 
   .facultyCardContent {
@@ -2968,63 +3071,72 @@
 
   .facultyDetailsCon {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     margin: 5% 10%;
     font-size: medium;
     font-weight: 700;
-    
+
   }
-  .facultyProfileCon{
+
+  .facultyProfileCon {
     text-align: center;
   }
-  .facultyProfileCon span{
+
+  .facultyProfileCon span {
     text-wrap: nowrap;
   }
-  .facultyDetailsKey{
-font-family: 'Times New Roman', Times, serif;
-width: 40%;
+
+  .facultyDetailsKey {
+    font-family: 'Times New Roman', Times, serif;
+    width: 40%;
   }
-  .facultyDetailsValue{
+
+  .facultyDetailsValue {
     font-family: 'Times New Roman', Times, serif;
     width: 60%;
-    padding-left:2% ;
+    padding-left: 2%;
   }
-  .facultyDetailsValue span{
+
+  .facultyDetailsValue span {
     text-wrap: nowrap;
     font-family: 'Times New Roman', Times, serif;
   }
-.facultyProfileCon span{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
+
+  .facultyProfileCon span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
 
-/* Event Coordinator Dashboard */
-/* ============================================================= */
-.eventcoordinatorDashBoard{
-  display: flex;
+  /* Event Coordinator Dashboard */
+  /* ============================================================= */
+  .eventcoordinatorDashBoard {
+    display: flex;
     flex-direction: column;
-}
-.eventSelection{
-  display: flex;
+  }
+
+  .eventSelection {
+    display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: end;
     margin: 5% 2% 1% 0%;
-}
-.eventSelectionCon{
-  display: flex;
+  }
+
+  .eventSelectionCon {
+    display: flex;
     flex-direction: column;
     padding: 1% 1%;
     border-radius: 10px;
     font-size: medium;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
-}
-.EventCoordinatorOuterDiv{
-   display: grid;
+  }
+
+  .EventCoordinatorOuterDiv {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 5% 10%;
     place-items: space-between;
@@ -3032,110 +3144,125 @@ width: 40%;
     grid-row-gap: 50px;
     height: 50%;
     width: 80%;
-}
-.EventCoordinatorCard{
-  display: flex;
+  }
+
+  .EventCoordinatorCard {
+    display: flex;
     flex-direction: column;
     border: 2px solid black;
     margin: 5% 0%;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     border-radius: 20px;
-}
-.EventCoordinatorCon{
-   display: flex;
+  }
+
+  .EventCoordinatorCon {
+    display: flex;
     flex-direction: column;
     padding: 3% 10%;
-}
-.EventCoordinatorProfile{
-   height: 100%;
+  }
+
+  .EventCoordinatorProfile {
+    height: 100%;
     width: 80%;
     padding: 30%;
     margin: 10%;
     border-radius: 10px;
     border: 2px solid black;
-}
-.EventCoordinatorProfileCon span{
-display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-wrap: nowrap;
-}
-.EventCoordinatorDetailsCon{
-   display: flex;
-    flex-direction: row; 
+  }
+
+  .EventCoordinatorProfileCon span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+  }
+
+  .EventCoordinatorDetailsCon {
+    display: flex;
+    flex-direction: row;
     margin: 5% 10%;
     font-size: medium;
     font-weight: 700;
-}
-.EventCoordinatorDetailsKey{
-  font-family: 'Times New Roman', Times, serif;
-width: 40%;
-}
-.DetailsEventCoordinatorValue{
-   font-family: 'Times New Roman', Times, serif;
-    width: 60%;
-    padding-left:2% ;
-}
-.EventCoordinatorDetailsValue{
-  padding-left: 2%;
-}
-.EventCoordinatorDetailsValue span{
-   text-wrap: nowrap;
-    font-family: 'Times New Roman', Times, serif;
-   
-}
+  }
 
-.ProfileEdition{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  margin-right:8% ;
-  margin-top: 2%;
-}
-.ProfileSaving{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  margin-right:8% ;
-  margin-top: 2%;
-}
-.EditMyProfile{
-  padding: 3% 20%; 
-  background-color: green;
-  color: whitesmoke;
-  border-radius: 10px;
-  border: 2px solid black;
-  font-size: large;
-  font-weight: 400;
-}
-.EditMyProfile span{
-  text-wrap: nowrap;
-  font-family: 'Times New Roman', Times, serif;
-}
-.my-profile-content .updatedmyprofileuserdata{
+  .EventCoordinatorDetailsKey {
+    font-family: 'Times New Roman', Times, serif;
+    width: 40%;
+  }
+
+  .DetailsEventCoordinatorValue {
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    padding-left: 2%;
+  }
+
+  .EventCoordinatorDetailsValue {
+    padding-left: 2%;
+  }
+
+  .EventCoordinatorDetailsValue span {
+    text-wrap: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  .ProfileEdition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-right: 8%;
+    margin-top: 2%;
+  }
+
+  .ProfileSaving {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-right: 8%;
+    margin-top: 2%;
+  }
+
+  .EditMyProfile {
+    padding: 3% 20%;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: large;
+    font-weight: 400;
+  }
+
+  .EditMyProfile span {
+    text-wrap: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .my-profile-content .updatedmyprofileuserdata {
     border: none;
     padding: 0% 0%;
     padding: 2%;
-    
+
     background-color: whitesmoke;
     width: 60%;
     border-radius: 10px;
   }
-  .savingUserDetails{
-   padding: 5% 40%; 
-  background-color: green;
-  color: whitesmoke;
-  border-radius: 10px;
-  border: 2px solid black;
-  font-size: large;
-  font-weight: 400;
+
+  .savingUserDetails {
+    padding: 5% 40%;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: large;
+    font-weight: 400;
 
   }
-/* =========================================================================================== */
+
+  /* =========================================================================================== */
   /* Assignment Section */
   .assignment {
     display: flex;
@@ -3187,13 +3314,14 @@ width: 40%;
 
   }
 
-  .event-assignment-info  {
+  .event-assignment-info {
     font-family: 'Times New Roman', Times, serif;
     padding: 2%;
     /* width: 75%; */
     /* justify-content: space-betweens; */
   }
-  .event-assignment-info .event-assignment-info-key{
+
+  .event-assignment-info .event-assignment-info-key {
     text-wrap: nowrap;
     font-family: 'Times New Roman', Times, serif;
     width: 30%;
@@ -3229,14 +3357,16 @@ width: 40%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+
   }
-  .event-info .event-info-key{
-     text-wrap: nowrap;
+
+  .event-info .event-info-key {
+    text-wrap: nowrap;
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
   }
-/* ============================================================ */
+
+  /* ============================================================ */
   /* Certificate Download */
   .certificatedownload {
     display: flex;
@@ -3255,7 +3385,7 @@ width: 40%;
 
   .outer-certificate-download {
     height: 70vh;
-   border-radius: 10px;
+    border-radius: 10px;
     margin: 0% 15%;
     box-shadow: 0 0 3px 3px #000;
   }
@@ -3290,7 +3420,7 @@ width: 40%;
 
 
   /* Sports Page */
-/* ======================================================================================== */
+  /* ======================================================================================== */
   .footerEventsHeader {
     padding: 2% 10% 0px 10%;
   }
@@ -3319,9 +3449,10 @@ width: 40%;
     font-weight: 600;
     padding: 2% 0px 0% 10%;
     color: #000;
-   
+
   }
-  .outer-div-event-details{
+
+  .outer-div-event-details {
     display: flex;
     flex-direction: column;
   }
@@ -3335,7 +3466,7 @@ width: 40%;
     flex-direction: row;
   }
 
-  .footer-sub-details .footer-sub-details-key{
+  .footer-sub-details .footer-sub-details-key {
     width: 15%;
   }
 
@@ -3346,7 +3477,8 @@ width: 40%;
     color: #112D4E;
 
   }
-  .coordinator-content{
+
+  .coordinator-content {
     margin: 0% 0% 4% 0%;
   }
 
@@ -3359,7 +3491,8 @@ width: 40%;
     display: flex;
     flex-direction: row;
   }
-  .footer-event-coordinator-details .footerEventCoordinatorDetailsKey{
+
+  .footer-event-coordinator-details .footerEventCoordinatorDetailsKey {
     width: 15%;
   }
 
@@ -3372,115 +3505,126 @@ width: 40%;
     outline: none;
     font-size: large;
     font-weight: 400;
-    
+
     border: 2px solid black;
 
   }
 
-/* ====================================================================== */
-.technical-images{
-  height: 600px;
-}
-/* Cultural Event Images */
+  /* ====================================================================== */
+  .technical-images {
+    height: 600px;
+  }
+
+  /* Cultural Event Images */
   .cultural-images {
-    margin: 3% 10%  0% 10%;
+    margin: 3% 10% 0% 10%;
     border-radius: 10px;
     height: 600px;
   }
 
 
 
-/* ================================================================ */
-/* Event Registration */
-.eventsregistration{
-  display: flex;
-  flex-direction: column;
-  margin:3% 5%;
-}
-.eventContentHeader{
-  font-size: large;
-  font-weight: 500;
-  color: white;
-  background-color: rgb(32, 223, 32);
-  text-align: center;
-  padding: 1% 0%;
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 10px;
-}
-.eventNav{
-  display: flex;
-  flex-direction: column;
-  margin: 3% 30%;
-}
-.EventSelectOptions{
-  padding:  2% 5%;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 5%;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: large;
-  font-weight: 400;
-}
-.options{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: large;
-  font-weight: 400;
-}
+  /* ================================================================ */
+  /* Event Registration */
+  .eventsregistration {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 5%;
+  }
 
-.registerDetails{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  
-}
-.registerCandidateDetails{
-  border: none;
-padding: 2% 5%;
-/* border: 2px solid black;
+  .eventContentHeader {
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(32, 223, 32);
+    text-align: center;
+    padding: 1% 0%;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+  }
+
+  .eventNav {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 30%;
+  }
+
+  .EventSelectOptions {
+    padding: 2% 5%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 400;
+  }
+
+  .options {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 400;
+  }
+
+  .registerDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .registerCandidateDetails {
+    border: none;
+    padding: 2% 5%;
+    /* border: 2px solid black;
 border-radius: 10px; */
-}
-.registerCandidateDetails::placeholder{
-  color: gray;
-   font-size: medium;
-font-weight: 400; 
-}
-.eventRegisteSubmit{
-  margin: 0% 30%;
-  padding: 1% 0%;
-  background-color: red;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: large;
-  font-weight: 400;
-}
-.contactCoordinator{
-  display: flex;
-  flex-direction: column;
- 
-}
-.eventCoordinatorContentHeader{
-   font-size: large;
-  font-weight: 500;
-  color: white;
- background-color: blueviolet;
-  text-align: center;
-  padding: 1% 0%;
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 10px;
- margin: 3% 0% 1% 0%;
-}
-.eventContent{
-  font-size: large;
-  font-weight: 400;
-  padding: 1% 5%;
-}
+  }
+
+  .registerCandidateDetails::placeholder {
+    color: gray;
+    font-size: medium;
+    font-weight: 400;
+  }
+
+  .eventRegisteSubmit {
+    margin: 0% 30%;
+    padding: 1% 0%;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 400;
+  }
+
+  .contactCoordinator {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .eventCoordinatorContentHeader {
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 1% 0%;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    margin: 3% 0% 1% 0%;
+  }
+
+  .eventContent {
+    font-size: large;
+    font-weight: 400;
+    padding: 1% 5%;
+  }
 
 
-/* About Us */
+  /* About Us */
 
-/* ============================================ */
+  /* ============================================ */
   /* ABout Us */
   .aboutUs {
     display: flex;
@@ -3539,7 +3683,7 @@ font-weight: 400;
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    
+
   }
 
   .authorDetailsCon {
@@ -3563,7 +3707,8 @@ font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
 
   }
-  .authorDetailsCon .authorCol{
+
+  .authorDetailsCon .authorCol {
     width: 5%;
   }
 
@@ -3579,7 +3724,8 @@ font-weight: 400;
     gap: 30px;
     padding-top: 5%;
   }
-/* MyProfile Page */
+
+  /* MyProfile Page */
   .profile {
     background-color: whitesmoke;
   }
@@ -3591,6 +3737,7 @@ font-weight: 400;
     flex-direction: row;
     margin: 0% 5%;
   }
+
   .my-profile-pic-icon {
     height: 300px;
     width: 30%;
@@ -3601,6 +3748,7 @@ font-weight: 400;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
   }
+
   .my-profile-details {
     display: flex;
     flex-direction: column;
@@ -3612,6 +3760,7 @@ font-weight: 400;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
   }
+
   .my-profile-content {
     display: flex;
     flex-direction: row;
@@ -3626,13 +3775,16 @@ font-weight: 400;
     border-bottom: 5px solid black;
     border-top: transparent;
   }
+
   .my-profile-content .festuserkey {
     width: 40%;
     font-family: 'Times New Roman', Times, serif;
   }
+
   .my-profile-content .myprofileiconcol {
     width: 5%;
   }
+
   .my-profile-content .myprofileuserdata {
     border: none;
     padding: 0% 0%;
@@ -3642,15 +3794,17 @@ font-weight: 400;
     width: 60%;
     border-radius: 10px;
   }
-  
-/* ================================================================================= */
+
+  /* ================================================================================= */
   .student-profile {
     padding: 20px;
   }
+
   .student-profile-details {
     padding-right: 20px;
     padding-bottom: 20px;
   }
+
   /* inner-profile Class */
   /* ================================================== */
   .my-profile {
@@ -3661,6 +3815,7 @@ font-weight: 400;
     align-items: center;
     gap: 20%;
   }
+
   /* main-profile-details Class */
   /* ================================================== */
   .main-profile-details {
@@ -3672,6 +3827,7 @@ font-weight: 400;
     border-bottom: 3px solid black;
     padding: 2% 10%;
   }
+
   /* profile-image Class */
   /* ================================================== */
   .profile-image {
@@ -3679,6 +3835,7 @@ font-weight: 400;
     height: 80%;
     width: 80%;
   }
+
   /* profile-details Class */
   /* ================================================== */
   .profile1-details {
@@ -3690,82 +3847,92 @@ font-weight: 400;
 
 
 
-/* Sponser Logos */
-/* ================================================================ */
-.sponsers{
-  display: flex;
-  flex-direction: column;
-  margin: 5%;
-}
-.sponserContent{
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  
-}
-.selectyear{
-  padding: 0.5% 1%;
-  border-radius: 5px;
-}
-.sponserLogoHeader{
-  font-size: x-large;
-  font-weight: 500;
-  font-family: 'Times New Roman', Times, serif;
-}
-.sponserLogoYear{
-  font-size: medium;
-  padding: 3% 1% 0% 1%;
-}
-.sponserDetails{
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin: 3% 0%; 
-}
-.bannerImage{
-  height: 60vh;
-  width: 100%;
-  border: 2px solid black;
-  border-radius: 10px;
-   border-top: 5px solid black;
-  border-bottom: 5px solid black;
- display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center; 
-}
-.bannerSubImages{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 3%;
+  /* Sponser Logos */
+  /* ================================================================ */
+  .sponsers {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
 
-}
-.images{
-  height: 50vh;
-  width: 100%;
-  border: 2px solid black;
-  border-radius: 10px;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-   place-content: center;
-   text-align: center;
-}
-.backToHome{
-  text-decoration: none;
-}
+  .sponserContent {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+  }
+
+  .selectyear {
+    padding: 0.5% 1%;
+    border-radius: 5px;
+  }
+
+  .sponserLogoHeader {
+    font-size: x-large;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .sponserLogoYear {
+    font-size: medium;
+    padding: 3% 1% 0% 1%;
+  }
+
+  .sponserDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 3% 0%;
+  }
+
+  .bannerImage {
+    height: 60vh;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bannerSubImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+
+  }
+
+  .images {
+    height: 50vh;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    place-content: center;
+    text-align: center;
+  }
+
+  .backToHome {
+    text-decoration: none;
+  }
 
 
 
 
 
- /* ============================================================================================================= */
+  /* ============================================================================================================= */
   /* Stalls */
   .stalls {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-   
+
   }
+
   .stallsInfo {
     background-color: whitesmoke;
     padding: 5%;
@@ -3781,10 +3948,11 @@ font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
 
   }
- .content {
+
+  .content {
     margin-left: 20px;
     padding: 2% 0%;
-    
+
   }
 
   .main-stall-header {
@@ -3795,7 +3963,8 @@ font-weight: 400;
     font-weight: 500px;
     font-family: 'Times New Roman', Times, serif;
   }
- .biriyanifastfood-stalls {
+
+  .biriyanifastfood-stalls {
     background-color: #00ADB5;
     display: flex;
     flex-direction: column;
@@ -3812,7 +3981,8 @@ font-weight: 400;
     margin: 5% 0%;
     border: 3px solid black;
   }
-.fastfood-header {
+
+  .fastfood-header {
     padding: 10px 0px 10px 30px;
     font-size: larger;
     font-weight: 500;
@@ -3820,7 +3990,8 @@ font-weight: 400;
     padding: 5% 5%;
     font-family: 'Times New Roman', Times, serif;
   }
-.stalls-event-content {
+
+  .stalls-event-content {
     padding: 8px 15px 8px 0px;
     font-size: large;
     font: weight 400;
@@ -3828,42 +3999,51 @@ font-weight: 400;
     display: flex;
     flex-direction: row;
   }
- .stalls-event-content .eventContentKey{
+
+  .stalls-event-content .eventContentKey {
     font-family: 'Times New Roman', Times, serif;
     width: 40%;
   }
-  .stalls-event-content .stallsKey{
+
+  .stalls-event-content .stallsKey {
     font-family: 'Times New Roman', Times, serif;
     width: 30%;
   }
-  .stalls-event-content .stallsValue{
+
+  .stalls-event-content .stallsValue {
     font-family: 'Times New Roman', Times, serif;
     width: 60%;
     padding-left: 2%;
   }
-  .stalls-event-content .orderItem{
+
+  .stalls-event-content .orderItem {
     font-family: 'Times New Roman', Times, serif;
-    padding-left:10% ;
+    padding-left: 10%;
     color: red;
     font-size: 16px;
     animation: highlight 2s infinite;
   }
-@keyframes highlight {
-  0%, 100% {
-    font-weight: bold;
-    
-  }
-  50% {
-    font-weight: normal;
-   
-  }
-}
-.stall-content-footer{
-  padding: 5%;
-}
 
-  
- /* ============================================================================== */
+  @keyframes highlight {
+
+    0%,
+    100% {
+      font-weight: bold;
+
+    }
+
+    50% {
+      font-weight: normal;
+
+    }
+  }
+
+  .stall-content-footer {
+    padding: 5%;
+  }
+
+
+  /* ============================================================================== */
 
   /* FAQ section */
   .faqContent {
@@ -3926,7 +4106,7 @@ font-weight: 400;
 
 
 
-/*  ===========================================================================================================*/
+  /*  ===========================================================================================================*/
   /* Emergency Contact */
   .emergencyContact {
     display: flex;
@@ -3987,11 +4167,12 @@ font-weight: 400;
     padding: 4%;
     font-family: 'Times New Roman', Times, serif;
   }
-  .emergency-contact-info-number{
-  
-  padding: 4%;
-  font-family: 'Times New Roman', Times, serif;
-}
+
+  .emergency-contact-info-number {
+
+    padding: 4%;
+    font-family: 'Times New Roman', Times, serif;
+  }
 
 
   /* ===================================================== */
@@ -4047,20 +4228,22 @@ font-weight: 400;
 
 
 
-/* Results And Winner Display */
+  /* Results And Winner Display */
   /* ============================================================== */
-  .resultsAndWinnerDisplay{
-     display: flex;
+  .resultsAndWinnerDisplay {
+    display: flex;
     flex-direction: column;
   }
-  .eventSelectionforWinnerDisplay{
+
+  .eventSelectionforWinnerDisplay {
     display: flex;
     flex-direction: row;
     align-items: end;
     justify-content: end;
     margin: 5% 10% 3% 10%;
   }
-  .SelectEventOptions{
+
+  .SelectEventOptions {
     padding: 0.5% 1%;
     font-size: medium;
     font-weight: 400;
@@ -4068,82 +4251,91 @@ font-weight: 400;
     border-radius: 5px;
     border: 2px solid black;
   }
-.resultsAndWinnersOuterDiv{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  column-gap: 5%;
-  row-gap: 3%;
-  margin: 0% 10% 10% 10% ;
-  
-}
-.eventName{
-  text-align: center;
-  padding: 1% 0%;
-  font-size: x-large;
-  font-weight: 500;
-  font-family: 'Times New Roman', Times, serif;
-}
-/* .resultsAndWinnerDispalyCon{
+
+  .resultsAndWinnersOuterDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    row-gap: 3%;
+    margin: 0% 10% 10% 10%;
+
+  }
+
+  .eventName {
+    text-align: center;
+    padding: 1% 0%;
+    font-size: x-large;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  /* .resultsAndWinnerDispalyCon{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 30px;
 } */
-.resultsAndWinnersInnerDiv{
-  width: 100%;
-  height: 600px;
-  /* border: 2px solid black; */
-  box-shadow: 0 0 3px 3px #000;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-.eventImage{
-  height: 200px ;
-  width: 60%;
-  border: 2px solid black;
-  border-radius: 20px;
-  box-shadow: 0 0 3px 3px #8a2be2;
-}
-.eventWinnerDetails{
-  height: 150px;
-  width: 80%;
-  border: 2px solid black;
-  border-radius: 20px;
-  box-shadow: 0 0 3px 3px #3a8abf;
-}
-.winnerDetails{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  font-size: large;
-  font-weight: 400;
-  padding: 3%;
-}
-.winnerDetailsKey{
-  width: 20%;
-  font-family: 'Times New Roman', Times, serif;
-}
-.winnerDetailsCol{
-  width: 3%;
-}
-.winnerDetailsValue{
-  width: 77%;
-  font-family: 'Times New Roman', Times, serif;
-}
+  .resultsAndWinnersInnerDiv {
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 3px 3px #000;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .eventImage {
+    height: 200px;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 3px #8a2be2;
+  }
+
+  .eventWinnerDetails {
+    height: 150px;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 3px #3a8abf;
+  }
+
+  .winnerDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: large;
+    font-weight: 400;
+    padding: 3%;
+  }
+
+  .winnerDetailsKey {
+    width: 20%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .winnerDetailsCol {
+    width: 3%;
+  }
+
+  .winnerDetailsValue {
+    width: 77%;
+    font-family: 'Times New Roman', Times, serif;
+  }
 
 
 
 
 
-/* Contact Us */
-/* Contact Us */
+  /* Contact Us */
+  /* Contact Us */
   /* =============================================================================== */
   .contact {
     display: flex;
@@ -4190,9 +4382,9 @@ font-weight: 400;
 
   /* ================================================== */
 
-  
 
-  
+
+
   /* admin-links */
 
   .admin-links {
@@ -4258,7 +4450,7 @@ font-weight: 400;
 
 
 
-  
+
 
 
   /* ============================================================================== */
@@ -4456,28 +4648,5 @@ font-weight: 400;
     color: black;
     text-decoration: none;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
