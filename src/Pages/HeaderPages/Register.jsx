@@ -21,7 +21,9 @@ export default function Register() {
                             <label htmlFor="verifyHuman" className="verify-content"><span>Verify you are human</span></label>
                         </div>
                      <div className="sing-up">
+                        <Link  to="/Home">
                             <button type="submit" className="sign-up-con"><span>Sign Up</span></button>
+                        </Link>
                         </div>
                     <div className="signin">
                         <p className="sign-in">Have an account</p>

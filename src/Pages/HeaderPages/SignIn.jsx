@@ -11,7 +11,11 @@ export default function SignIn() {
                     <div className="forget-div">
                     <Link to="/ForgotPassword" className="forgot-link">Forgot Password?</Link>
                     </div>
+                    <div className="sing-up">
+                    <Link to="/Home">
                     <button type="submit" className="sign-in-con"><span>Sign In</span></button>
+                    </Link>
+                    </div>
                 </div>
                 <div className="signin">
                     <p className="signup">
