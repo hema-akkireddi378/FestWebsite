@@ -26,7 +26,7 @@ export default function Register() {
                         </Link>
                         </div>
                     <div className="signin">
-                        <p className="sign-in">Have an account</p>
+                        <p className="sign-in">Have an account,</p>
                             <Link to="/SignIn" className="sign-in-link">Sign in</Link>
                         
                      </div>

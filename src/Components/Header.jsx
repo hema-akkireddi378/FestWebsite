@@ -9,21 +9,23 @@ export function MainHeader() {
             return (
                 <div className='header-outer-div'>
                     <div className="mrcl-code">
-               
-                    <h1 className='register-header'>MIRACLE</h1>
-               
-                </div>
+                        <h1 className='register-header'>MIRACLE</h1>
+                    </div>
                 </div>
             )
             break;
 
         case "/AboutFest":
             return (
-                <header className="AboutFestMainHeader">
-                    <Link to="/Home" className="backToHome">
-                        <h1 className='AboutFestHeader'>MIRACLE</h1>
-                    </Link>
-                </header>
+                <div className='header-outer-div'>
+                    <header className="AboutFestMainHeader">
+                        <div className="mrcl-code">
+                            <Link to="/" className="back-to-landingpage">
+                                <h1 className='register-header'>MIRACLE</h1>
+                            </Link>
+                        </div>
+                    </header>
+                </div>
             )
             break;
 
@@ -31,22 +33,22 @@ export function MainHeader() {
             return (
                 <div className='header-outer-div'>
                     <div className="mrcl-code">
-               
-                    <h1 className='main-header'>MIRACLE</h1>
-               
+                        <Link to="/" className="back-to-landingpage">
+                            <h1 className='register-header'>MIRACLE</h1>
+                        </Link>
+                    </div>
                 </div>
-                </div>
-                
+
             )
             break;
-        case "/PrivacyPolicy":
+        case "/Privacy":
             return (
                 <div className='header-outer-div'>
                     <div className="mrcl-code">
-               
-                    <h1 className='main-header'>MIRACLE</h1>
-               
-                </div>
+                        <Link to="/" className="back-to-landingpage">
+                            <h1 className='register-header'>MIRACLE</h1>
+                        </Link>
+                    </div>
                 </div>
             )
             break;
@@ -55,10 +57,8 @@ export function MainHeader() {
             return (
                 <div className='header-outer-div'>
                     <div className="mrcl-code">
-               
-                    <h1 className='signin-header'>MIRACLE</h1>
-               
-                </div>
+                        <h1 className='signin-header'>MIRACLE</h1>
+                    </div>
                 </div>
             )
             break;
@@ -66,7 +66,7 @@ export function MainHeader() {
             return (
                 <div className='header-outer-div'>
                     <div className="mrcl-code">
-                        <h1 className='main-header'>MIRACLE</h1>
+                        <h1 className='signin-header'>MIRACLE</h1>
                     </div>
                     <div className="landing-header-content">
                         <nav className="mainHeader-nav-elements">

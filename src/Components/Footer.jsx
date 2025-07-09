@@ -57,10 +57,6 @@ export function Footer() {
                     <li className="footer-bottom-2">Copyright &copy; 2025</li>
                     <li className="footer-bottom-2">|</li>
                     <li className="footer-bottom-2">
-                        <Link to="TermsAndConditions" className="bottomFooter-links">Terms</Link>
-                    </li>
-                    <li className="footer-bottom-2">|</li>
-                    <li className="footer-bottom-2">
                         <Link to="Privacy" className="bottomFooter-links">Privacy</Link>
                     </li>
                 </div>
@@ -73,10 +69,6 @@ export function Footer() {
                     <li className="footer-bottom-2">|</li>
                     <li className="footer-bottom-2">
                         <Link to="TermsAndConditions" className="bottomFooter-links">Terms</Link>
-                    </li>
-                    <li className="footer-bottom-2">|</li>
-                    <li className="footer-bottom-2">
-                        <Link to="Privacy" className="bottomFooter-links">Privacy</Link>
                     </li>
                 </div>
             );

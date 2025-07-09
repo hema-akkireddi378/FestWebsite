@@ -48,7 +48,8 @@
   .MainPrivacyHeader {
     background-color: black;
   }
-
+/* Privacy Page */
+/* ========================================================================= */
   .PrivacyHeader {
     padding: 10%;
     color: white;
@@ -56,7 +57,39 @@
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
   }
-
+  .back-to-landingpage{
+    text-decoration: none;
+  }
+  .privacy{
+    display: flex;
+    flex-direction: column;
+    padding: 10% 10%;
+  }
+  .privacyPolicy-logo{
+    height: 10vh;
+    width: 30%;
+    margin: 0% 0% 5% 0%;
+  }
+  .privacyPolicy-header{
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3% 0%;
+  }
+  .privacyPolicy-mainContent{
+    text-align: justify;
+  }
+.privacyPolicy-subHeader{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  padding: 5% 0%;
+  font-weight: 500;
+}
+.listOfInfo{
+  padding:0% 5% ;
+}
+  /* Terms And Conditions Page */
+  /* ========================================================================= */
   .TermsAndConditionsMainHeader {
     background-color: black;
   }
@@ -68,6 +101,39 @@
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
   }
+
+.termsandconditions{
+  display: flex;
+  flex-direction: column;
+  padding: 10% 10%;
+}
+.terms{
+  font-size: x-large;
+  font-weight: 400;
+  padding: 3% 0% 2% 0%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.main-terms{
+  text-align: justify;
+}
+.list-of-terms{
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.termsListItems{
+  font-size: large;
+  font-weight: 400;
+  padding: 5% 0% 3% 0%;
+}
+.useOfwebsite{
+  padding: 3% 5%;
+}
+.termsContactCon{
+  padding: 1% 0%;
+}
+
+
 
   /* Landing Page Header */
   /* ================================================== */
@@ -81,10 +147,10 @@
   .home-header-outer-div {
     display: flex;
     flex-direction: row;
-    padding: 3% 0 0 0;
+    padding: 5% 0 0 0;
     background-color: #000;
-
     justify-content: space-between;
+    
   }
 
   .landing-header-content {
@@ -92,12 +158,12 @@
   }
 
   .header-content {
-    margin: 3%;
+    /* margin: 3%; */
   }
 
   .main-header {
     color: white;
-    padding: 30% 0px 0px 20%;
+    padding: 0% 0px 0px 20%;
     font-size: x-large;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
@@ -139,7 +205,13 @@
     margin: 20% 0%;
     /* padding-bottom: 10%; */
   }
-
+/* About Fest */
+/* ============================================================== */
+.aboutFest{
+  display: flex;
+  flex-direction: column;
+  padding: 10% ;
+}
   .header-link-aboutfest {
     text-decoration: none;
     color: white;
@@ -153,6 +225,17 @@
     font-family: 'Times New Roman', Times, serif;
     text-wrap: nowrap;
   }
+  .FestHeader{
+    font-weight: 500;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3% 0%;
+  }
+  .about-fest-content{
+    text-align: justify;
+  }
+
+  /* ================================================================== */
 
   .header-links-register {
     text-decoration: none;
@@ -188,6 +271,7 @@
   }
 
   /* Home Page Content */
+  /* ============================================================== */
   .main-logo {
     background-color: whitesmoke;
     padding: 30% 0%;
@@ -205,8 +289,8 @@
   }
 
   .clg-logo {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
 
   }
@@ -648,8 +732,8 @@
     color: #00ADB5;
     font-size: larger;
     font-weight: 500;
-    padding: 5px 0px 20px 10px;
-    font-family: 'Inter', sans-serif;
+    padding: 3px 0px 20px 10px;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 10%;
   }
 
@@ -667,16 +751,16 @@
 
   .sports-header {
     padding: 10px 0px 10px 30px;
-    font-size: large;
-    font-weight: 500;
+    font-size: medium;
+    font-weight: 600;
     color: #112D4E;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .event-content {
     padding: 8px 15px 8px 0px;
-    font-size: medium;
-    font-weight: 400;
+    font-size: small;
+    font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
     display: flex;
@@ -685,7 +769,7 @@
 
   .event-content .eventContentKey {
     font-family: 'Times New Roman', Times, serif;
-    width: 40%;
+    width: 45%;
   }
 
   .more {
@@ -693,18 +777,18 @@
     text-align: end;
     padding: 10px 20px 10px 20px;
     margin-right: 0px;
-    font-size: large;
+    font-size: medium;
     font-weight: 300;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
   }
 
   .event-header {
-    font-size: x-large;
-    font-weight: 400;
+    font-size: large;
+    font-weight: 500;
     color: #8a2be2;
     padding-top: 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 
   }
 
@@ -870,12 +954,18 @@
 
   .authorDetailsCon .authorKey {
     width: 22%;
-    padding-left: 2%;
+    padding-left: 4%;
+    font-size: small;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .authorDetailsCon .authorValue {
     width: 78%;
     padding-left: 2%;
+    font-size: small;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .authorSocialMeadia {
@@ -914,7 +1004,7 @@
     flex-direction: column;
     border: 2px solid black;
     border-radius: 20px;
-    padding: 3% 5%;
+    padding: 5% 5%;
     gap: 10px;
     width: 100%;
     border-top: 5px solid black;
@@ -939,6 +1029,8 @@
   .my-profile-content .festuserkey {
     width: 40%;
     font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    font-weight: 600;
   }
 
   .my-profile-content .myprofileiconcol {
@@ -978,7 +1070,7 @@
     color: whitesmoke;
     border-radius: 10px;
     border: 2px solid black;
-    font-size: large;
+    font-size: medium;
     font-weight: 400;
   }
 
@@ -1003,9 +1095,12 @@
     color: whitesmoke;
     border-radius: 10px;
     border: 2px solid black;
-    font-size: large;
+    font-size: medium;
     font-weight: 400;
-
+   
+  }
+  .savingUserDetails span{
+     font-family: 'Times New Roman', Times, serif;
   }
 
   /* ============================================ */
@@ -1625,18 +1720,23 @@
 
   .stalls-event-content {
     padding: 10px 15px 10px 0px;
-    font-size: 1rem;
-    font: weight 500;
+    font-size: small;
+    font: weight 400;
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .stalls-event-content .stallsKey {
     width: 30%;
     font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    font-weight: 400;
   }
-
+  .stalls-event-content .stallsCol{
+    font-family: 'Times New Roman', Times, serif;
+  }
   .stalls-card-footer {
     height: 20%;
     background-color: #3a8abf;
@@ -1644,11 +1744,14 @@
 
   .stallsValue {
     text-wrap: nowrap;
+    padding-left:2% ;
     font-family: 'Times New Roman', Times, serif;
   }
 
   .stalls-event-content .orderItem {
     font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    font-weight: 400;
     padding-left: 10%;
     color: red;
     font-size: 16px;
@@ -2012,9 +2115,11 @@
   .bottomFooter {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     background-color: #EEEEEE;
     width: 100%;
+    gap: 5%;
   }
 
   .footer {
@@ -2031,14 +2136,15 @@
     list-style: none;
     margin: 20px 0px;
     font-size: small;
-    font-weight: 500;
+    font-weight: 600;
     color: black;
-
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .bottomFooter-links {
     text-decoration: none;
     color: black;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .main-footer-1 {
@@ -2518,6 +2624,14 @@
 
   .gridItem.tall {
     grid-row: span 2;
+  }
+
+  .CollegeSocialMedia {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 3% 5%;
   }
 
   /* Register Page */
