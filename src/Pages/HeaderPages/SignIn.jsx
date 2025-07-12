@@ -9,12 +9,12 @@ export default function SignIn() {
                     <input type="password" placeholder="Password" name="password" id="password" className="login-details">
                     </input>
                     <div className="forget-div">
-                    <Link to="/ForgotPassword" className="forgot-link">Forgot Password?</Link>
+                        <Link to="/ForgotPassword" className="forgot-link">Forgot Password?</Link>
                     </div>
-                    <div className="sing-up">
-                    <Link to="/Home">
-                    <button type="submit" className="sign-in-con"><span>Sign In</span></button>
-                    </Link>
+                    <div className="sing-in-button">
+                        <Link to="/Home">
+                            <button type="submit" className="sign-in-con"><span>Sign In</span></button>
+                        </Link>
                     </div>
                 </div>
                 <div className="signin">

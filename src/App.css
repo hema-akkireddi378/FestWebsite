@@ -147,7 +147,7 @@
   .home-header-outer-div {
     display: flex;
     flex-direction: row;
-    padding: 5% 0 0 0;
+    padding: 10% 0% 3% 0%;
     background-color: #000;
     justify-content: space-between;
     
@@ -2158,6 +2158,8 @@
     justify-content: center;
     align-items: center;
     line-height: 1.8rem;
+    color:  rgb(117, 232, 117);
+    font-size: medium;
   }
 
   .gamification {
@@ -2166,6 +2168,8 @@
     justify-content: center;
     align-items: center;
     line-height: 1.8rem;
+     color:  rgb(117, 232, 117);
+    font-size: medium;
   }
 
   .gallery {
@@ -2173,6 +2177,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+     color:  rgb(117, 232, 117);
+    font-size: medium;
   }
 
   .support {
@@ -2180,6 +2186,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+     color:  rgb(117, 232, 117);
+    font-size: medium;
   }
 
   .post-fest {
@@ -2187,7 +2195,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+     color: rgb(117, 232, 117);
+   
+    
   }
+ .post-fest-header{
+font-family: 'Times New Roman', Times, serif;
+ }
 
   .gallery {
     list-style: none;
@@ -2696,6 +2710,12 @@
     font-size: medium;
     font-weight: 400;
   }
+  .sing-in-button{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: green;
+    text-align: center;
+  }
   .sing-up{
      padding: 1% 0%;
     border: 3px solid black;
@@ -2720,7 +2740,20 @@
     font-size: large;
     font-weight: 500;
   }
+  .sign-in-con{
+    background: transparent;
+    border: none;
+   padding: 5% 0%;
+    color: #000;
+    font-size: large;
+    font-weight: 500;
+  }
   .sign-up-con span{
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  .sign-in-con span{
+    text-wrap: nowrap;
     font-family: 'Times New Roman', Times, serif;
     
   }
@@ -2730,7 +2763,7 @@
     align-items: center;
     justify-content: center;
   }
-  .sign-in-con{
+  /* .sign-in-con{
     padding: 5% 0%;
     background-color: green;
     border: 2px solid black;
@@ -2739,34 +2772,98 @@
     font-weight: 500;
   }
   .sign-in-con span{
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  /* .login-link {
-    padding: 2% 10%;
-    border: 2px solid black;
-    border-radius: 10px;
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    background-color: transparent;
-    background-color: green;
-  } */
-
-  /* .login-button {
-    font-size: large;
-    font-weight: 400;
-    border: none;
-    color: #000;
-    background-color: transparent;
-  }
-
-  .login-button span {
-
     text-wrap: nowrap;
+    font-family: 'Times New Roman', Times, serif;
   } */
+
+  /* About Fest Page */
+  /* ============================================================ */
+  .aboutFest{
+    display: flex;
+    flex-direction: column;
+    padding:  3% 5% ;
+  }
+.FestHeader{
+  font-size: xx-large;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}
+.about-fest-content{
+  line-height: 1.5rem;
+  text-align: justify;
+  padding: 2% 0% 0% 0%;
+}
+
+
+
+
+
+
+/* Terms And Conditions Page */
+/* ============================================================= */
+.termsandconditions{
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+}
+.terms{
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 1% 0%;
+}
+.main-terms{
+  line-height: 1.5rem;
+  text-align: justify;
+}
+.list-of-terms{
+  padding: 2% 0% 0% 1% ;
+
+}
+.termsListItems{
+  font-size: large;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}
+.useOfwebsite{
+  padding-left: 1%;
+}
+
+
+
+  /* Privacy Page */
+  /* ========================================================== */
+  .privacy{
+    display: flex;
+    flex-direction: column;
+   padding: 3% 5%;
+  }
+ .back-to-landingpage{
+  text-decoration: none;
+ }
+ .privacyPolicy-header{
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+ }
+.privacyPolicy-logo{
+  height: 30vh;
+  width: 20%;
+  margin: 3% 0%;
+}
+.privacyPolicy-mainContent{
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.listOfInfo{
+  padding-left:1% ;
+  margin: 2% 0%;
+  line-height: 1.5rem;
+}
+
+
+
+
 
   /* forgot Class */
   /* ================================================== */
@@ -2863,7 +2960,7 @@
   }
 
   .logo {
-    padding: 10% 35%;
+    padding: 15% 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2871,6 +2968,8 @@
 
   .clg-logo {
     border-radius: 70%;
+    height: 60%;
+    width: 60%;
   }
 
 
@@ -2885,15 +2984,13 @@
   .event-header {
     font-size: xx-large;
     font-weight: 100;
-    padding-bottom: 20px;
     color: black;
-    padding-top: 20px;
     font-family: 'Times New Roman', Times, serif;
   }
 
   .main-events-header {
     color: #8a2be2;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 0px;
     font-size: x-large;
     font-weight: 500px;
@@ -2920,8 +3017,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /* grid-template-rows: repeat(3,1fr); */
-
   }
 
   .cricket {
@@ -2930,20 +3025,10 @@
     flex-direction: column;
     border-radius: 15px;
     margin: 5% 5% 5% 5%;
-    /* border: 3px solid gray; */
-    transform: translateY(-20%);
-    transform: translateY(+20%);
-    transition: transform 0.3s ease-in-out;
     box-shadow: 0 0 2px 2px #000;
   }
 
-  .cricket:hover {
-
-    transform: translateX(5%);
-    transform: translateX(5%);
-    animation-duration: 0.5s;
-  }
-
+  
   .sports-header {
     padding: 10px 0px 10px 30px;
     font-size: x-large;
@@ -2973,8 +3058,8 @@
     text-decoration: none;
     text-align: end;
     padding: 15px;
-    margin-right: 0px;
-    font-size: x-large;
+    margin-right: 10px;
+    font-size: large;
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
     color: #000;
@@ -3634,8 +3719,8 @@
   }
 
   .footer-button-link {
-    padding: 1% 6%;
-    margin: 10px 0px 5% 10%;
+    padding: 0.8% 5%;
+    margin: 10px 0px 5% 12%;
     border-radius: 10px;
     background-color: red;
     color: white;
@@ -3766,13 +3851,8 @@ border-radius: 10px; */
   .aboutUs {
     display: flex;
     flex-direction: row;
-
+    padding: 3% 0%;
   }
-
-  /* .aboutUs1{
-  padding: 50px  0px  50px 12px;
-    
-} */
 
   .moreAboutUs {
     display: flex;
@@ -3783,6 +3863,10 @@ border-radius: 10px; */
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     width: 40%;
+    font-weight: 500;
+    font-size: medium;
+    padding: 5% 5% 5% 5%;
+    line-height: 2rem;
   }
 
   .aboutContent {
@@ -3800,15 +3884,7 @@ border-radius: 10px; */
     font-family: 'Times New Roman', Times, serif;
   }
 
-  .moreAboutUs {
-    padding: 5% 5% 5% 5%;
-    line-height: 2rem;
-    font-size: medium;
-    font-weight: 400px;
-    font-weight: 500;
-    font-size: large;
-  }
-
+  
   .weBoth {
     height: 50%;
     width: 50%;
@@ -3840,7 +3916,7 @@ border-radius: 10px; */
   .authorDetailsCon .authorKey {
     width: 35%;
     justify-content: center;
-    padding-left: 10%;
+    padding-left: 5%;
     font-family: 'Times New Roman', Times, serif;
 
   }
@@ -3858,8 +3934,8 @@ border-radius: 10px; */
   .authorSocialMeadia {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    padding-top: 5%;
+    gap: 20px;
+    padding-top: 3%;
   }
 
   /* MyProfile Page */
@@ -4599,6 +4675,7 @@ border-radius: 10px; */
     align-items: center;
     justify-content: center;
     padding: 0.5%;
+    background-color: #EEEEEE
   }
 
   .footer-bottom-2 {

@@ -2,9 +2,6 @@ import React from "react"
  export default function AboutFest() {
   return  (
         <div className='aboutFest'>
-            {/* <h2 className='aboutFestHeader'>Fest Title</h2>
-            <img className="clg-fest-logo" src='https://media.collegedekho.com/media/img/news/college_fests.jpg?height=310&width=615' alt='Fest Image' height="200px" width="80%"></img>
-            */}
             <h2 className="FestHeader">About Miracle Fest</h2>
             <p className='about-fest-content'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum vel quam molestias incidunt tempora aut pariatur eaque facere maiores! Deleniti iusto ullam et tenetur suscipit voluptates odit neque veniam minima.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit expedita labore voluptatem pariatur at iure, officiis totam ullam natus quas saepe maiores quos illo autem. Repellat aut veniam perspiciatis.
@@ -32,6 +29,21 @@ import React from "react"
                 Facere, totam labore autem alias, eaque eveniet dignissimos ipsam ipsum consequuntur maxime doloremque rerum tempore accusantium sapiente inventore quisquam. Beatae cum placeat eius, qui soluta modi at illo officia et?
                 Veniam illum ipsum accusamus. Dolorem fugiat molestiae consectetur asperiores consequatur voluptatum voluptate eaque, sequi omnis itaque cum repellat ratione eveniet alias laudantium animi accusamus laborum labore sunt esse minus repudiandae?
                 Beatae pariatur asperiores quisquam excepturi ducimus, sapiente at nisi numquam officiis veritatis eius. Laborum officia quidem earum illum tenetur minus vero voluptatum, nulla eos nobis accusamus ducimus sit esse facere?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum pariatur dolore libero commodi, obcaecati eum. Qui provident minima repellendus esse sit nisi, nobis, tempore omnis assumenda beatae at iure repudiandae!
+                Ad, atque nobis asperiores pariatur dolore, sint iste esse beatae facilis aperiam error ipsa qui hic dolor a repudiandae, iure cumque tenetur! Exercitationem sed deserunt aliquam sint sunt consectetur quo!
+                Debitis repudiandae tempora voluptatibus assumenda consequuntur iure quia maiores quibusdam temporibus neque esse autem, soluta illum exercitationem ut enim officia, harum architecto optio. Voluptate assumenda in reiciendis eum natus aperiam?
+                Dolore tempora accusantium esse reprehenderit tempore. Odit nobis nulla ex vel porro. Fugit temporibus accusamus maiores velit dolores tempora fugiat unde vitae placeat ducimus accusantium, suscipit, iure sed provident ratione?
+                Vero eligendi iusto molestiae saepe eos modi magni pariatur perspiciatis error ad reiciendis odio, optio distinctio debitis ratione corrupti laudantium, voluptatum veniam tempore blanditiis! Culpa ab repudiandae atque vitae excepturi.
+                Quod explicabo rerum libero in dicta? Libero numquam, rem aperiam esse maiores culpa sed quis delectus, neque, autem labore aut ex officiis itaque qui ducimus minus. Accusantium excepturi nam modi.
+                Incidunt debitis similique ipsa, consequatur eaque perspiciatis pariatur repellendus aliquid nulla iure quae assumenda voluptates totam? Numquam modi culpa, non illum obcaecati eum, a suscipit labore fuga deserunt, excepturi commodi?
+                Placeat animi modi obcaecati delectus veniam repudiandae natus dolore omnis! Voluptas omnis nobis aliquid pariatur quibusdam delectus placeat reiciendis ducimus itaque? Ratione ullam facilis iusto accusantium quisquam similique, aut cupiditate.
+                Numquam eveniet, distinctio dolorum magni ut fuga perspiciatis obcaecati. Ut, unde dignissimos maxime eos, consequatur totam praesentium temporibus consectetur fugit doloremque quas doloribus earum nisi alias necessitatibus aspernatur quasi iure!
+                Voluptatem accusantium asperiores totam explicabo eius, nostrum maiores obcaecati natus! Magnam vitae, mollitia placeat velit molestias culpa optio sint accusantium harum voluptates. Harum, aliquam a! Sed eos magnam quibusdam iste.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellat aspernatur nisi nulla atque, vitae doloribus fugit sequi quod ipsum ipsa dignissimos eum vero tempore adipisci aut? Fugit, dolor sint.
+                Repudiandae accusantium, fugit voluptates earum hic nemo, excepturi fugiat alias ratione accusamus error, eum mollitia. Explicabo quae dolorum eum quod, atque error, fugit harum iusto laboriosam dolorem, incidunt aut minus?
+                Earum nihil totam deleniti doloribus error iure doloremque? Veniam veritatis ex in, consequuntur sint illo delectus. Quae laboriosam illum provident optio, sed culpa accusantium eum deleniti doloremque aut? Praesentium, id.
+                Obcaecati laudantium maiores mollitia necessitatibus dolor numquam aperiam eaque quae ex quis quas quibusdam ipsam fugit dolorem amet quos soluta facilis enim placeat, dicta odio magnam omnis! Nihil, quidem repellat.
+                Fugiat, quisquam? Illum cumque adipisci et a quod iusto hic rem eaque odio debitis provident delectus porro esse, beatae non ex, odit sed ea nemo sapiente veniam eveniet similique. Vitae.
             </p>
         </div>
     )
