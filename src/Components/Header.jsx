@@ -62,6 +62,15 @@ export function MainHeader() {
                 </div>
             )
             break;
+        // case "/Spinner":
+        //     return(
+        //          <div className='header-outer-div'>
+        //             <div className="mrcl-code">
+        //                 <h1 className='signin-header'>MIRACLE</h1>
+        //             </div>
+        //         </div>
+        //     )
+        //     break;
         case "/":
             return (
                 <div className='header-outer-div'>

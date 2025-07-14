@@ -48,8 +48,9 @@
   .MainPrivacyHeader {
     background-color: black;
   }
-/* Privacy Page */
-/* ========================================================================= */
+
+  /* Privacy Page */
+  /* ========================================================================= */
   .PrivacyHeader {
     padding: 10%;
     color: white;
@@ -57,37 +58,45 @@
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
   }
-  .back-to-landingpage{
+
+  .back-to-landingpage {
     text-decoration: none;
   }
-  .privacy{
+
+  .privacy {
     display: flex;
     flex-direction: column;
     padding: 10% 10%;
   }
-  .privacyPolicy-logo{
+
+  .privacyPolicy-logo {
     height: 10vh;
     width: 30%;
     margin: 0% 0% 5% 0%;
   }
-  .privacyPolicy-header{
+
+  .privacyPolicy-header {
     font-size: large;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
     padding: 3% 0%;
   }
-  .privacyPolicy-mainContent{
+
+  .privacyPolicy-mainContent {
     text-align: justify;
   }
-.privacyPolicy-subHeader{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: medium;
-  padding: 5% 0%;
-  font-weight: 500;
-}
-.listOfInfo{
-  padding:0% 5% ;
-}
+
+  .privacyPolicy-subHeader {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding: 5% 0%;
+    font-weight: 500;
+  }
+
+  .listOfInfo {
+    padding: 0% 5%;
+  }
+
   /* Terms And Conditions Page */
   /* ========================================================================= */
   .TermsAndConditionsMainHeader {
@@ -102,36 +111,42 @@
     font-family: 'Times New Roman', Times, serif;
   }
 
-.termsandconditions{
-  display: flex;
-  flex-direction: column;
-  padding: 10% 10%;
-}
-.terms{
-  font-size: x-large;
-  font-weight: 400;
-  padding: 3% 0% 2% 0%;
-  font-family: 'Times New Roman', Times, serif;
-}
-.main-terms{
-  text-align: justify;
-}
-.list-of-terms{
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
-}
-.termsListItems{
-  font-size: large;
-  font-weight: 400;
-  padding: 5% 0% 3% 0%;
-}
-.useOfwebsite{
-  padding: 3% 5%;
-}
-.termsContactCon{
-  padding: 1% 0%;
-}
+  .termsandconditions {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 10%;
+  }
+
+  .terms {
+    font-size: x-large;
+    font-weight: 400;
+    padding: 3% 0% 2% 0%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .main-terms {
+    text-align: justify;
+  }
+
+  .list-of-terms {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .termsListItems {
+    font-size: large;
+    font-weight: 400;
+    padding: 5% 0% 3% 0%;
+  }
+
+  .useOfwebsite {
+    padding: 3% 5%;
+  }
+
+  .termsContactCon {
+    padding: 1% 0%;
+  }
 
 
 
@@ -150,7 +165,7 @@
     padding: 10% 0% 3% 0%;
     background-color: #000;
     justify-content: space-between;
-    
+
   }
 
   .landing-header-content {
@@ -205,13 +220,15 @@
     margin: 20% 0%;
     /* padding-bottom: 10%; */
   }
-/* About Fest */
-/* ============================================================== */
-.aboutFest{
-  display: flex;
-  flex-direction: column;
-  padding: 10% ;
-}
+
+  /* About Fest */
+  /* ============================================================== */
+  .aboutFest {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+  }
+
   .header-link-aboutfest {
     text-decoration: none;
     color: white;
@@ -225,13 +242,15 @@
     font-family: 'Times New Roman', Times, serif;
     text-wrap: nowrap;
   }
-  .FestHeader{
+
+  .FestHeader {
     font-weight: 500;
     font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
     padding: 3% 0%;
   }
-  .about-fest-content{
+
+  .about-fest-content {
     text-align: justify;
   }
 
@@ -269,6 +288,38 @@
     font-family: 'Times New Roman', Times, serif;
 
   }
+
+/* Spinner Page */
+  /* ====================================================================== */
+ 
+.loading-spinner-page {
+ bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+
+
 
   /* Home Page Content */
   /* ============================================================== */
@@ -539,7 +590,7 @@
     font-size: medium;
     font-weight: 2rem;
     border-bottom: 2px solid black;
-    background-color: rgb(227, 227, 239) ;
+    background-color: rgb(227, 227, 239);
     box-shadow: 0 0 3px 0px black;
   }
 
@@ -587,6 +638,15 @@
     margin: 10% 0%;
     text-align: center;
   }
+  .sing-in {
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: green;
+    padding: 4% 0%;
+    margin: 10% 0%;
+    text-align: center;
+  }
 
   .signin {
     display: flex;
@@ -601,7 +661,7 @@
     text-align: center;
     background: transparent;
     border: none;
-    
+
 
   }
 
@@ -624,17 +684,25 @@
     font-size: small;
     font-weight: 700;
   }
-  .sign-in-con{
+
+  .sign-in-con {
     padding: 1% 0%;
     background-color: green;
     border: none;
-    
+text-align: center;
+    background: transparent;
+    border: none;
   }
-  .sign-in-con span{
+
+  .sign-in-con span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     font-weight: 700;
   }
+
   .other {
     text-align: center;
     padding: 3% 0%;
@@ -702,7 +770,8 @@
     display: flex;
     justify-content: end;
   }
-  .forgot-link{
+
+  .forgot-link {
     font-size: small;
     font-weight: 700;
   }
@@ -1097,10 +1166,11 @@
     border: 2px solid black;
     font-size: medium;
     font-weight: 400;
-   
+
   }
-  .savingUserDetails span{
-     font-family: 'Times New Roman', Times, serif;
+
+  .savingUserDetails span {
+    font-family: 'Times New Roman', Times, serif;
   }
 
   /* ============================================ */
@@ -1734,9 +1804,11 @@
     font-size: small;
     font-weight: 400;
   }
-  .stalls-event-content .stallsCol{
+
+  .stalls-event-content .stallsCol {
     font-family: 'Times New Roman', Times, serif;
   }
+
   .stalls-card-footer {
     height: 20%;
     background-color: #3a8abf;
@@ -1744,7 +1816,7 @@
 
   .stallsValue {
     text-wrap: nowrap;
-    padding-left:2% ;
+    padding-left: 2%;
     font-family: 'Times New Roman', Times, serif;
   }
 
@@ -2158,7 +2230,7 @@
     justify-content: center;
     align-items: center;
     line-height: 1.8rem;
-    color:  rgb(117, 232, 117);
+    color: rgb(117, 232, 117);
     font-size: medium;
   }
 
@@ -2168,7 +2240,7 @@
     justify-content: center;
     align-items: center;
     line-height: 1.8rem;
-     color:  rgb(117, 232, 117);
+    color: rgb(117, 232, 117);
     font-size: medium;
   }
 
@@ -2177,7 +2249,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     color:  rgb(117, 232, 117);
+    color: rgb(117, 232, 117);
     font-size: medium;
   }
 
@@ -2186,7 +2258,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     color:  rgb(117, 232, 117);
+    color: rgb(117, 232, 117);
     font-size: medium;
   }
 
@@ -2195,13 +2267,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     color: rgb(117, 232, 117);
-   
-    
+    color: rgb(117, 232, 117);
+
+
   }
- .post-fest-header{
-font-family: 'Times New Roman', Times, serif;
- }
+
+  .post-fest-header {
+    font-family: 'Times New Roman', Times, serif;
+  }
 
   .gallery {
     list-style: none;
@@ -2312,7 +2385,8 @@ font-family: 'Times New Roman', Times, serif;
     transform: rotate(360deg);
     color: red;
   }
-  .register-header{
+
+  .register-header {
     padding: 30px 0px 30px 20px;
     color: #fff;
     font-weight: 500;
@@ -2324,7 +2398,8 @@ font-family: 'Times New Roman', Times, serif;
     transition: transform 0.5s, color 0.5s;
     cursor: pointer;
   }
-  .signin-header{
+
+  .signin-header {
     padding: 30px 0px 30px 20px;
     color: #fff;
     font-weight: 500;
@@ -2673,7 +2748,7 @@ font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.5);
   }
-  
+
 
 
   input::placeholder {
@@ -2684,16 +2759,16 @@ font-family: 'Times New Roman', Times, serif;
 
   .verify-div {
     display: flex;
-   flex-direction: row;
-   border: 3px solid black;
-   margin: 2% 40% 2% 40%;
+    flex-direction: row;
+    border: 3px solid black;
+    margin: 2% 40% 2% 40%;
     padding: 1% 0% 1% 1%;
     border-radius: 10px;
     font-size: large;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
     gap: 20px;
-    
+
   }
 
   .verify-div span {
@@ -2710,59 +2785,76 @@ font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     font-weight: 400;
   }
-  .sing-in-button{
+
+  .sing-in-button {
     border: 2px solid black;
     border-radius: 10px;
     background-color: green;
     text-align: center;
   }
-  .sing-up{
-     padding: 1% 0%;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin: 2% 40% 2% 40%;
-   background-color: green;
-   text-align: center;
-  }
-  .sing-in{
+
+  .sing-up {
     padding: 1% 0%;
     border: 3px solid black;
     border-radius: 10px;
     margin: 2% 40% 2% 40%;
-   background-color: green;
-   text-align: center;
+    background-color: green;
+    text-align: center;
   }
-  .sign-up-con{
+
+  .sing-in {
+    padding: 3% 0%;
+    border: 3px solid black;
+    border-radius: 10px;
+    /* margin: 2% 40% 2% 40%; */
+    background-color: green;
+    text-align: center;
+  }
+
+  .sign-up-con {
     background: transparent;
     border: none;
-   
+ 
     color: #000;
     font-size: large;
     font-weight: 500;
   }
   .sign-in-con{
-    background: transparent;
+      background: transparent;
     border: none;
-   padding: 5% 0%;
+ 
     color: #000;
     font-size: large;
     font-weight: 500;
   }
-  .sign-up-con span{
+
+  /* .sign-in-con {
+    background: transparent;
+    border: none;
+    padding: 3% 30% ;
+    color: #000;
+    font-size: large;
+    font-weight: 500;
+  } */
+
+  .sign-up-con span {
     font-family: 'Times New Roman', Times, serif;
     
   }
-  .sign-in-con span{
+
+  .sign-in-con span {
     text-wrap: nowrap;
     font-family: 'Times New Roman', Times, serif;
-    
+
   }
-  .signin{
+
+  .signin {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
+
   /* .sign-in-con{
     padding: 5% 0%;
     background-color: green;
@@ -2778,88 +2870,100 @@ font-family: 'Times New Roman', Times, serif;
 
   /* About Fest Page */
   /* ============================================================ */
-  .aboutFest{
+  .aboutFest {
     display: flex;
     flex-direction: column;
-    padding:  3% 5% ;
+    padding: 3% 5%;
   }
-.FestHeader{
-  font-size: xx-large;
-  font-weight: 500;
-  font-family: 'Times New Roman', Times, serif;
-}
-.about-fest-content{
-  line-height: 1.5rem;
-  text-align: justify;
-  padding: 2% 0% 0% 0%;
-}
+
+  .FestHeader {
+    font-size: xx-large;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .about-fest-content {
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 2% 0% 0% 0%;
+  }
 
 
 
 
 
 
-/* Terms And Conditions Page */
-/* ============================================================= */
-.termsandconditions{
-  display: flex;
-  flex-direction: column;
-  padding: 3% 5%;
-}
-.terms{
-  font-size: xx-large;
-  font-weight: 600;
-  font-family: 'Times New Roman', Times, serif;
-  margin: 1% 0%;
-}
-.main-terms{
-  line-height: 1.5rem;
-  text-align: justify;
-}
-.list-of-terms{
-  padding: 2% 0% 0% 1% ;
+  /* Terms And Conditions Page */
+  /* ============================================================= */
+  .termsandconditions {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5%;
+  }
 
-}
-.termsListItems{
-  font-size: large;
-  font-weight: 500;
-  font-family: 'Times New Roman', Times, serif;
-}
-.useOfwebsite{
-  padding-left: 1%;
-}
+  .terms {
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1% 0%;
+  }
+
+  .main-terms {
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+
+  .list-of-terms {
+    padding: 2% 0% 0% 1%;
+
+  }
+
+  .termsListItems {
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .useOfwebsite {
+    padding-left: 1%;
+  }
 
 
 
   /* Privacy Page */
   /* ========================================================== */
-  .privacy{
+  .privacy {
     display: flex;
     flex-direction: column;
-   padding: 3% 5%;
+    padding: 3% 5%;
   }
- .back-to-landingpage{
-  text-decoration: none;
- }
- .privacyPolicy-header{
-  font-size: xx-large;
-  font-weight: 600;
-  font-family: 'Times New Roman', Times, serif;
- }
-.privacyPolicy-logo{
-  height: 30vh;
-  width: 20%;
-  margin: 3% 0%;
-}
-.privacyPolicy-mainContent{
-  text-align: justify;
-  line-height: 1.5rem;
-}
-.listOfInfo{
-  padding-left:1% ;
-  margin: 2% 0%;
-  line-height: 1.5rem;
-}
+
+  .back-to-landingpage {
+    text-decoration: none;
+  }
+
+  .privacyPolicy-header {
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .privacyPolicy-logo {
+    height: 30vh;
+    width: 20%;
+    margin: 3% 0%;
+  }
+
+  .privacyPolicy-mainContent {
+    text-align: justify;
+    line-height: 1.5rem;
+  }
+
+  .listOfInfo {
+    padding-left: 1%;
+    margin: 2% 0%;
+    line-height: 1.5rem;
+  }
 
 
 
@@ -2867,10 +2971,15 @@ font-family: 'Times New Roman', Times, serif;
 
   /* forgot Class */
   /* ================================================== */
+ 
   .forgot-link {
     text-decoration: none;
+    align-items: flex-end;
     color: #000;
+    font-weight: 400;
+    font-size: medium;
     text-align: end;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .register-elements {
@@ -2889,7 +2998,8 @@ font-family: 'Times New Roman', Times, serif;
     font-family: 'Times New Roman', Times, serif;
     border: 3px solid black;
   }
-  .forget-div{
+
+  .forget-div {
     display: flex;
     align-items: end;
     justify-content: e;
@@ -2947,6 +3057,34 @@ font-family: 'Times New Roman', Times, serif;
 
 
 
+
+  /* Spinner Page */
+  /* ====================================================================== */
+ 
+.loading-spinner-page {
+ bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
 
 
 
@@ -3028,7 +3166,7 @@ font-family: 'Times New Roman', Times, serif;
     box-shadow: 0 0 2px 2px #000;
   }
 
-  
+
   .sports-header {
     padding: 10px 0px 10px 30px;
     font-size: x-large;
@@ -3884,7 +4022,7 @@ border-radius: 10px; */
     font-family: 'Times New Roman', Times, serif;
   }
 
-  
+
   .weBoth {
     height: 50%;
     width: 50%;
@@ -4677,6 +4815,7 @@ border-radius: 10px; */
     padding: 0.5%;
     background-color: #EEEEEE
   }
+  
 
   .footer-bottom-2 {
     text-decoration: none;
