@@ -293,15 +293,16 @@
   /* ====================================================================== */
  
 .loading-spinner-page {
- bottom: 0;
+  /* position: fixed; */
+  top: 0;
   left: 0;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5); /* optional dim */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  
 }
 
 .spinner {
@@ -316,6 +317,7 @@
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
 
 
 
@@ -3062,15 +3064,16 @@ text-align: center;
   /* ====================================================================== */
  
 .loading-spinner-page {
- bottom: 0;
+  /* position: fixed; */
+  top: 0;
   left: 0;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5); /* optional dim */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  
 }
 
 .spinner {
@@ -3085,6 +3088,7 @@ text-align: center;
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
 
 
 
