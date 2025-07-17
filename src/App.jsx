@@ -10,6 +10,7 @@ import LandingPageContent from "./Pages/HeaderPages/LandingPageContent";
 
 // import AnimationPage from "./Pages/HeaderPages/AnimationPage";
 // Header Pages
+import Spinner from "./Pages/HeaderPages/Spinner";
 import Home from "./Pages/HeaderPages/Home";
 import Events from "./Pages/HeaderPages/Events";
 import Register from "./Pages/HeaderPages/Register";
@@ -93,6 +94,8 @@ function App() {
         <Route path="/" element={<LandingPageContent />}></Route>
         {/* <Route path="/AnimationPage" element={<AnimationPage/>}></Route> */}
         {/* Header Pages */}
+        <Route path="/Spinner" element={<Spinner/>}></Route>
+
         <Route path="/Home" element={<Home />}></Route>
         <Route path="/Events" element={<Events />}></Route>
         <Route path="/Register" element={<Register />}></Route>
